@@ -1,0 +1,19 @@
+{
+
+  "manifest_version": 2,
+  "name": "Comment Section Fixer",
+  "version": "1.0",
+
+  "description": "Fixes the comment section of Reddit, back to the good old days.\nFixes the offenses seen here: http://i.imgur.com/O7KANT7.png",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/*/comments/*"],
+      "js": ["jquery-2.1.4.js",
+            "reddit_comment_fixer.js"],
+
+      "run_at": "document_end"
+    }
+  ]
+
+}
